@@ -3,10 +3,20 @@
     margin: 0;
     padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
     background-color: #1e1e1e;
     font-family: 'raleway';
     color: white;
+}
+h2{
+  font-size: 2.3rem;
+}
+p{
+  font-size: 1.5rem;
+  text-align: justify;
 }
 @font-face {
     font-family: 'raleway';
@@ -14,6 +24,8 @@ body{
   }
   a{
     text-decoration: none;
+    font-size: 1.3rem;
+    color: #9553FF;
   }
   i{
     font-size: 30px;
@@ -104,6 +116,8 @@ transition: opacity 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
   }
 .navbar-menu-open {
     display: flex;
@@ -131,8 +145,8 @@ transition: opacity 0.3s ease;
   align-items: center;
 }
 .center .title{
-    font-size: 110px;
-    line-height: 90px;
+    font-size: 7rem;
+    line-height: 5rem;
     display: inline-block;
     background-image: linear-gradient(to right, rgba(149, 83, 255, 0.25), rgba(255, 140, 0, 0.25));
     -webkit-background-clip: text; /* Para Safari */
@@ -140,16 +154,21 @@ transition: opacity 0.3s ease;
     color: transparent; /* Para navegadores compatibles */
 }
 .center .subtitle{
-    font-size: 39px;
-    line-height: 39px;
+    font-size: 2.3rem;
+    line-height: 1.5rem;
     font-weight: bold;
+}
+.center .subtitle i{
+  font-size: 2.5rem;
 }
 .center .subtitle span{
     color: #9553FF;
+    font-size: 2.3rem;
 }
 .center .calltoaction{
     margin-top: 10px;
-    width: 400px;
+    width: 90%;
+    max-width: 500px;
     height: 40px;
     display: flex;
     justify-content: space-around;
@@ -189,7 +208,7 @@ transition: opacity 0.3s ease;
     justify-content: space-around;
     align-items: center;
     left: 50%;
-    width: 30%;
+    width: 60%;
     transform: translate(-50%);
     border-top: 1px solid none;
     border-left: 1px solid none;
@@ -199,11 +218,28 @@ transition: opacity 0.3s ease;
     padding: 10px 30px;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    z-index: 2;
+    z-index: 20;
     max-width: 300px;
 }
 .fixed i{
     font-size: 22px;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+.fixed a{
+  color: white;
+}
+.fa-behance:hover{
+  color: #1769FF ;
+}
+.fa-linkedin-in:hover{
+  color: #0A66C2;
+}
+.fa-twitter:hover{
+  color: #1DA1F2;
+}
+.fa-youtube:hover{
+  color: #ff0000;
 }
 
  @keyframes slide {
@@ -290,6 +326,15 @@ transition: opacity 0.3s ease;
     object-position: center;
     width: 100%;
     height: 100%;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.secondvh article div img:hover{
+  transform: scale(1.2);
+}
+.secondvh article div:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 .thirdvh article{
   width: 95%;
@@ -310,6 +355,7 @@ transition: opacity 0.3s ease;
 .thirdvh p{
   display: inline-block;
   width: 500px;
+  line-height: 1.9rem;
 }
 .thirdvh figure{
   width: 100%;
@@ -317,11 +363,34 @@ transition: opacity 0.3s ease;
   height: 500px;
   overflow: hidden;
   border-radius: 25px;
+  position: relative;
 }
 .thirdvh figure img{
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease;
+}
+.thirdvh figure:hover img{
+  transform: scale(1.2);
+}
+.fourvh {
+  position: relative;
+}
+.text-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.text-container h2{
+  font-size: 12vw;
+  max-width: 1400px;
+  text-align: center;
+  opacity: .2;
+  line-height: 14rem;
 }
 .form {
   border-radius: 20px;
@@ -329,12 +398,14 @@ transition: opacity 0.3s ease;
   height: 500px;
   padding: 20px;
   width: 320px;
+  position: relative;
+  z-index: 10;
 }
 
-.title {
+.title__form {
   color: #eee;
   font-family: sans-serif;
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-top: 30px;
 }
@@ -367,7 +438,7 @@ transition: opacity 0.3s ease;
   border: 0;
   box-sizing: border-box;
   color: #eee;
-  font-size: 18px;
+  font-size: 1.8rem;
   height: 100%;
   outline: 0;
   padding: 4px 20px 0;
@@ -399,6 +470,7 @@ transition: opacity 0.3s ease;
   transform-origin: 0 50%;
   transition: transform 200ms, color 200ms;
   top: 20px;
+  font-size: 1.5rem;
 }
 
 .input:focus ~ .cut {
@@ -418,19 +490,27 @@ transition: opacity 0.3s ease;
 }
 
 .submit {
-  background-color: #08d;
+  background-color: #9553FF;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
   color: #eee;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.8rem;
   height: 50px;
   margin-top: 38px;
   text-align: center;
   width: 100%;
+  transition: 0.3s all ease-in-out;
 }
 
-.submit:active {
-  background-color: #06b;
+.submit:hover {
+  background-color: white;
+  color: #9553FF;
+}
+
+@media only screen and (max-width: 480px) {
+  *{
+    font-size: 9px;
+  }
 }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" class="css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./logos/logo para web.ico">
     <title>Axel Arrieta</title>
 </head>
 <body>
@@ -36,7 +38,7 @@
           </p>
           <div class="calltoaction">
             <div class="cv__container">
-                <a class="cv" href="#">Dowload CV</a>
+                <a download="Axel Arrieta CV" class="cv" href="./Curriculo Designer.pdf">Dowload CV</a>
             </div>
             <div class="contact__container">
                 <a class="contact" href="#">Contact Me</a>
@@ -45,10 +47,10 @@
         </article>
     </section>
     <section class="fixed">
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-behance"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-youtube"></i>
+        <a href="https://www.linkedin.com/in/axel-arrieta-553b31187/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.behance.net/axelarrieta1"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://twitter.com/axelux_ve"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCh6UKQ09jvMWg0fvLKEJUvA"><i class="fa-brands fa-youtube"></i></a>
     </section>
   
   
@@ -70,15 +72,14 @@
             <h2>
                 My Projects
             </h2>
-            <div>
-                <img src="./images/mockuplisto2.png" alt="">
+            <div class="">
+              <a href="https://axelfas.github.io/Compa-Estudios-Website/"><img src="./images/mockuplisto2.png" alt="Compa Estudios"></a>
             </div>
-            <div>
-              <img src="./images/mockup-listo-3.png" alt="">
+            <div class="">
+              <a href="https://todoparatuturbo.com/" target="_blank"><img src="./images/mockup-listo-3.png" alt="Todo para tu Turbo"></a>
             </div>
-            <div>
-              <img src="./images/mockup-listo-4.png" alt="">
-            </div>
+            <div class="">
+              <a href="https://axelfas.github.io/JeasTattoo/"><img src="./images/mockup-listo-4.png" alt="Jeas Tattoo"></a>            </div>
         </article>
     </section>
 
@@ -88,8 +89,17 @@
               About Me
           </h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam dignissimos tenetur blanditiis ut inventore, eos minus laborum deleniti mollitia possimus vitae ipsam perferendis eaque maiores labore magnam qui exercitationem?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt explicabo harum minus distinctio recusandae eius eaque itaque totam, sunt, ullam est libero quae a voluptatum rerum laborum iusto soluta? Vel?
+            I am a 22-year-old Venezuelan UI/UX designer and front-end developer, 
+            currently residing in Valencia, Spain. With a solid education and 
+            experience in the design field, I am passionate about creating 
+            engaging and digital experiences.
+            <br>
+            <br>
+            My primary focus lies in designing intuitive and visually appealing 
+            interfaces while ensuring a seamless and optimized user experience. 
+            In addition to my UI/UX design expertise, I have also worked as a 
+            graphic designer, which has provided me with a comprehensive 
+            understanding of visual design and a unique perspective in approaching projects from different angles.
           </p>
           <figure>
             <img src="./images/photo_2023-07-12_12-27-40.jpg" alt="">
@@ -97,8 +107,11 @@
       </article>
   </section>
   <section class="fourvh vh" id="contact">
+    <div class="text-container">
+      <h2>Let's Connect</h2>
+    </div>
     <div class="form">
-      <div class="title">Contact me</div>
+      <div class="title__form">Contact me</div>
       <div class="input-container ic1">
         <input placeholder="" type="text" class="input" id="firstname">
         <div class="cut"></div>
@@ -115,11 +128,10 @@
         <div class="cut cut-short"></div>
         <label class="iLabel" for="email">Email</label>
       </div>
-      <button class="submit" type="text">submit</button>
+      <button class="submit" type="text">Submit</button>
     </div>
   </section>
 
-<script src="script.js">
-</script>
+<script src="script.js"></script>
 </body>
 </html>
