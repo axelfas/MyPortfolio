@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" class="css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./logos/logo para web.ico">
     <title>Axel Arrieta</title>
 </head>
@@ -110,26 +109,27 @@
     <div class="text-container">
       <h2>Let's Connect</h2>
     </div>
-    <div class="form">
-      <div class="title__form">Contact me</div>
-      <div class="input-container ic1">
-        <input placeholder="" type="text" class="input" id="firstname">
-        <div class="cut"></div>
-        <label class="iLabel" for="firstname">First name</label>
+      <div class="login-box">
+        <form action="https://formsubmit.co/axelfas08@gmail.com" method="POST">
+          <div class="user-box">
+            <input pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" type="text" name="name" required type="text" name="" required="">
+            <label>Name</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="email" required>
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Subject" required>
+            <label>Subject</label>
+          </div>
+          <div class="send__container">
+            <button href="#">
+              SEND
+            </button>
+          </div>
+        </form>
       </div>
-
-      <div class="input-container ic2">
-        <input placeholder="" type="text" class="input" id="lastname">
-        <div class="cut"></div>
-        <label class="iLabel" for="lastname">Last name</label>
-      </div>
-      <div class="input-container ic2">
-        <input placeholder="" type="text" class="input" id="email">
-        <div class="cut cut-short"></div>
-        <label class="iLabel" for="email">Email</label>
-      </div>
-      <button class="submit" type="text">Submit</button>
-    </div>
   </section>
 
 <script src="script.js"></script>
