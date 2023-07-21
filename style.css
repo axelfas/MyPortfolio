@@ -7,9 +7,11 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    background-color: #1e1e1e;
+    /* background-color: #1e1e1e; */
     font-family: 'raleway';
     color: white;
+    background-image: url(./images/full\ background.png);
+    background-size: cover;
 }
 h2{
   font-size: 2.3rem;
@@ -150,9 +152,9 @@ transition: opacity 0.3s ease;
     line-height: 5rem;
     display: inline-block;
     background-image: linear-gradient(to right, rgba(149, 83, 255, 0.25), rgba(255, 140, 0, 0.25));
-    -webkit-background-clip: text; /* Para Safari */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* Para navegadores compatibles */
+    color: transparent;
 }
 .center .subtitle{
     font-size: 2.3rem;
@@ -403,7 +405,6 @@ transition: opacity 0.3s ease;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
   height: 400px;
-  display: ;
 }
 
 .login-box .user-box {
