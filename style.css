@@ -297,6 +297,7 @@ transition: opacity 0.3s ease;
   }
 
 .secondvh{
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
